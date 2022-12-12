@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formatação de Textos.</title>
+    <style>
+        section{
+            margin: auto;
+            width: 700px;
+            background: white;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.336);
+        }
+        h1{
+            background: rgb(2, 146, 182);
+            line-height: 60px;
+            text-align: center;
+            color: white;
+        }
+        body{
+            font: normal 10pt Arial;
+            background-color: rgb(228, 228, 228)
+        }
+        mark{
+            background-color: rgb(39, 67, 160);
+            color: white;
+        }
+        input{
+            background: white;
+            padding: 3px;
+            border-radius: 5px;
+            border-style:none;
+            width: 120px;
+            height: 30px;
+            text-align: center;
+        }
+        input#bot1{
+            background: rgb(2, 146, 182);
+            color: white;
+            
+        }
+        mark.tags{
+            background: rgba(160, 32, 160, 0.904);
+        }
+    </style>
+</head>
+<body>
+        <h1>Principais Formatações</h1>
+        <p>
+            <input type="button" value=" Capítulo 08 | P1 " id="bot1" onclick="bparte1()">
+            <input type="button" value=" Capítulo 08 | P2 " id="bot2" onclick="bparte2()">
+        </p>
+    <section id="lista">
+        <div id="parte1">
+            <h2><mark>Nedrigo / Destaque</mark></h2>
+                <p>Nessa frase temos um <b>termo negrigo</b> usando a <mark class="tags">Tag &lt; b &gt; </mark> (Não Semântico)</p>
+                <p>Nessa frase temos um <strong>termo negrito</strong> usando a <mark class="tags">Tag &lt; strong &gt; </mark> (Semântico)</p>
+
+            <h2><mark>Itálico / Ênfaze</mark></h2>
+                <p>Nessa frase temos um <i>italico</i> usando a <mark class="tags">Tag &lt; i &gt; </mark> (Não Semântico)</p>
+                <p> Nessa grase temo uma <em>ênfaze</em> usando a <mark class="tags">Tag &lt; em &gt; </mark>; (Semântico)</p>
+
+            <h2><mark>Marcado</mark></h2>
+                <p>Podemos também criar um <mark style="background-color: rgb(84, 158, 23);"> texto marcado</mark> usando a <mark class="tags">Tag &lt; mark &gt; </mark></p>    
+        
+            
+            <h2><mark>Grande e Pequeno</mark></h2> 
+                <p>Hoje, pode demos usar a <mark class="tags"> Tag &lt; small &gt; </mark> para deixar um texto <small>pequeno.</small></p>  
+                
+            <h2><mark>Texto Deletado</mark></h2>    
+                <p>Podemos marcar um <del>texto como excluído</del> para indicar que ele dever ser lido mas não considerado. <mark class="tags">Tag &lt; del &gt; </mark></p>
+
+            <h2><mark>Texto Inserido</mark></h2>
+                <p>Podmos marcar um <ins> como inserido </ins> para dar uma enfazer e indicar que ele foi adicionado depois. <mark class="tags">Tag &lt; ins &gt; </mark></p>  
+                <p>Também existe o <u>sublinhado</u> com a <mark class="tags">Tag &lt; u &gt; </mark></p> 
+                
+            <h2><mark>Texto Sobescrito e Subrescrito</mark></h2>  
+                <p>Elevando um texto ex: 2<sup>10</sup>. <mark class="tags">Tag &lt; sup &gt; </mark></p>
+                <p>Abaixando um texto ex: H<sub>2</sub>O. <mark class="tags">Tag &lt; sub &gt; </mark></p>
+        </div>    
+    </section>
+    <div id="parte2" style="visibility: hidden">
+        <h2><mark>Mono-Espaçamento e Quebra de Linhas</mark></h2>
+            <p>Aqui tem um exempto de uma <code>frase mono-espaçada</code> usando a <mark class="tags">Tag &lt; code &gt; </mark>.</p>
+            <pre><p>- Nessa parte do código, estou usando a tag <mark class="tags">Tag &lt; pre &gt; </mark>
+                    para que o html siga as mesma quebras de linhas que
+                    estou usando, sem precisar ficar colocando o 
+                    &lt;br&gt;! 
+                </p> </pre>
+
+        <h2><mark>Citações</mark></h2>
+            <p>Como diria um cara: <q>o computador é um burro muito rápido</q>! Coloca aspas "" usando a <mark class="tags">Tag &lt; q &gt; </mark></p>
+            <p>Como diz no livro fundamentos de HMTL5 e CSS3, de Maurício Samy:
+                <blockquote cite="https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/ZyJyDwAAQBAJ?hl=pt-BR&gbpv=1&dq=livro+html&printsec=frontcover">Palavras ou termos cujo significado deva ser destacado são grafados em itálico. Por exemplo: <br>   A presença do atributo <em>contrlos</em> faz com que o navegador renderize uma barra de controle <br> 
+                nativa contendo botões do tipo <em>play</em> e <em>pause</em> bem como controle de volume. <br>
+                (Usando a <mark class="tags">Tag &lt; pre &gt; </mark>)
+                </blockquote>
+            </p>
+        <h2><mark>Abreviações (explicações).</mark></h2>
+            <p>Usando a <mark class="tags">Tag &lt; abbr &gt; para (expilcar) a abreviação <abbr title="Hyper Text Markup Language">HTML</abbr>, se passar o mouse <br> em cima de HTML vai aprecer uma caixinha! </mark></p>
+    </div>  
+      
+    <script>
+        var lista = document.getElementById('lista')
+        var texto1 = document.getElementById('parte1')
+        var texto2 = document.getElementById ('parte2')
+
+        var bot1 = document.getElementById('bot1')
+        var bot2 = document.getElementById('bot2')
+
+        bot1,bot2.addEventListener('mouseover', teste )
+        function teste(){
+            bot1.style.cursor ='pointer'
+            bot2.style.cursor ='pointer'
+        }
+        function bparte1(){
+            lista.innerHTML = `${texto1.innerHTML}`
+            //texto2.style.visibility= 'hidden'
+            bot1.style.background= 'rgb(2, 146, 182)'
+            bot1.style.color= 'white'
+
+            bot2.style.background='white'
+            bot2.style.color='black'
+        }
+        
+        function bparte2(){
+            lista.innerHTML = `${texto2.innerHTML}`
+            bot2.style.background= 'rgb(2, 146, 182)'
+            bot2.style.color= 'white'
+
+            bot1.style.background='white'
+            bot1.style.color='black'
+        }
+
+
+    </script>
+    
+</body>
+</html>

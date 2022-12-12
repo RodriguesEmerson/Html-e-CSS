@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Imagens Dinânicas</title>
+    <style>
+        div{
+            width: 600px;
+            background:rgb(211, 102, 51);
+            font: normal 14pt arial;
+            color: white;
+            padding: 15px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Imagens Dinânicas </h1>
+        <p>Abra em vários dipositivos de tamanhos diferentes!</p>
+        <picture>
+            <source media="(max-width: 750px)" srcset="imagens/fotop.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="imagens/fotom.png" type="image/png">
+            <img src="imagens/fotog.png" alt="">
+        </picture>
+    </div>
+    <br>
+    <div>
+        <h1>Reproduzindo Áudio</h1>
+        <p>Vamos reproduzir áudio em HTML5.</p>
+        <audio src="audio/hinoccb312.mp3" controls></audio>
+
+        <audio preload="metadata" controls>
+            <source src="audio/hinoccb312.mp3" type="audio/mp3">
+        </audio>
+    </div>
+    <br>
+    <div>
+            <h1>Inserindo Vídeos</h1>
+            <p>Inserindo vídeos hoespedados locamente!</p>
+            <video src="videos/limoes.mp4" poster="imagens/capa.png" width="550" controls ></video>
+
+            <video controls width="550" poster="imagens/capa.png">
+                <source src="videos/limoes.mp4" type="video/mp4">
+            </video>
+            </div>
+            <br>
+            <div>
+            <h1>Inserido Vídoes Hospedados no Youtube</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+@charset "UTF-8";
+#d1, #d2, #d3{
+    height: 200px;
+    width: 200px;
+    background: rgb(35, 126, 43);
+    color: white;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 200px;
+    display: inline-block; 
+}
+#d1:hover, #d2:hover, #d3:hover{
+    background: rgb(8, 100, 20);
+}
+div{
+    color: blueviolet;
+}
+div > p{
+    color: tomato;
+    display: none;
+}
+div:hover > p{
+    display: block;
+}
