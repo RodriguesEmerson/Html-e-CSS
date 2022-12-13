@@ -62,6 +62,9 @@ input{
 #data, #city{
     width: 80%;
 }
+#payment{
+    width: 100%;
+}
 #payment>div{
     display: flex;
 }
@@ -74,6 +77,7 @@ input{
     cursor: pointer;
 }
 #botgerar{
+    margin-left: 70%;
     position: absolute;
     display: flex;
     align-items: center;
