@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projeto Recibo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="imagens/logo.png" alt="logo">
+        <h1>Projeto Recibo</h1>
+    </header>
+    <main id="container">
+        <section></section>
+            <div>
+                <label for="valor">Valor R$</label>
+                <div>
+                    <input type="number" name="valor" id="valor" placeholder="0,00">
+                    <p class="help">Valor do recibo</p>
+                </div>
+            </div>
+            <div>
+                <label for="nome">Nome do Pagador</label>
+                <div>
+                    <input type="text" name="nome" id="nome">
+                </div>
+            </div>
+            <div>
+                <label for="cpf">CPF ou CNPJ (opcional):</label>
+                <div>
+                <input type="number" name="cpf" id="cfp">
+                <p class="help">Somente números</p>
+                </div>
+            </div>
+            <div>
+                <label for="referencia">Referente à</label>
+                <div>
+                    <input type="text" name="ref" id="ref">
+                </div>
+            </div>
+            <div id="citydata">
+                <div>
+                    <label for="city">Cidade:</label>
+                    <div id="divcity">
+                        <input type="text" name="city" id="city">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="data">Data:</label>
+                    <div id="divdata">
+                        <input type="number" name="data" id="data">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <label for="nomeemissor">Nome do Emissor</label>
+                <div>
+                    <input type="text" name="nomeemissor" id="nomeemissor">
+                </div>
+            </div>
+
+            <section id="payment">
+                    <label for="#">Forma de Pagamento</label>
+                <div>
+                    <input class="radio" type="radio" name="formpag" id="radiomoney">
+                    <label for="radiomoney">Dinheiro</label>
+
+                    <input class="radio" type="radio" name="formpag" id="radiocheq">
+                    <label for="radiocheq">Cheque</label>
+
+                    <input class="radio" type="radio" name="formpag" id="radiopix">
+                    <label for="radiopix">Pix</label>
+
+                    <input class="radio" type="radio" name="formpag" id="radiotrans">
+                    <label for="radiotrans">Tranferência/Depósito</label>
+
+                    <input class="radio" type="radio" name="formpag" id="radiocartao">
+                    <label for="radiocartao">Cartão de Crédito/Débito</label>
+                </div>
+            </section>
+            <div  id="botgerar">
+                <img src="imagens/logo.png" alt="logo">
+                <span>Gerar</span>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Feito por <a href="#">Emerson Rodrigues</a> | Fazendo o Curso em Vídeo | &copy;2022</p>
+    </footer>    
+</body>
+</html>
