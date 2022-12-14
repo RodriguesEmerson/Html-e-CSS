@@ -65,11 +65,14 @@ input{
 #payment{
     width: 100%;
 }
-#payment>div{
+#payment>div>div{
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
 }
-#payment>div>label{
-    padding: 8px;
+#payment>div> div>label{
+    padding-left: 8px;
     font-weight: lighter
 }
 .radio{
@@ -106,4 +109,18 @@ footer{
     text-align: center;
 }
 
-@media screen and 
+@media screen and (min-width: 805px){
+    #payment>div{
+        columns: 2;
+    }
+    #pay2{
+        width: 500px;
+        margin-left: -140px;
+    }
+}
+@media screen and (max-width: 450px){
+
+    #pay2, #pay1{
+        width: 230px;
+    }
+}
