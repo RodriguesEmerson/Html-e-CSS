@@ -77,7 +77,6 @@ input{
     cursor: pointer;
 }
 #botgerar{
-    margin-left: 70%;
     position: absolute;
     display: flex;
     align-items: center;
@@ -97,6 +96,7 @@ input{
 #botgerar:hover{
     cursor: pointer;
     margin-top: 20px;
+    background-color: rgb(23, 107, 156);
 }
 #botgerar:nth-last-child(1){
     transition: all 400ms ease-in-out;
@@ -105,3 +105,5 @@ footer{
     margin-top: 100px;
     text-align: center;
 }
+
+@media screen and 

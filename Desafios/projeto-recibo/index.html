@@ -7,7 +7,7 @@
     <title>Projeto Recibo</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="carregar()">
     <header>
         <img src="imagens/logo.png" alt="logo">
         <h1>Projeto Recibo</h1>
@@ -17,20 +17,20 @@
             <div>
                 <label for="valor">Valor R$</label>
                 <div>
-                    <input type="number" name="valor" id="valor" placeholder="0,00">
+                    <input type="text" name="valor" id="valor" placeholder="0,00">
                     <p class="help">Valor do recibo</p>
                 </div>
             </div>
             <div>
                 <label for="nome">Nome do Pagador</label>
                 <div>
-                    <input type="text" name="nome" id="nome">
+                    <input type="text" name="nome" id="nome" placeholder="Nome">
                 </div>
             </div>
             <div>
                 <label for="cpf">CPF ou CNPJ (opcional):</label>
                 <div>
-                <input type="number" name="cpf" id="cfp">
+                <input type="text" name="cpf" id="cfp">
                 <p class="help">Somente números</p>
                 </div>
             </div>
@@ -51,7 +51,7 @@
                 <div>
                     <label for="data">Data:</label>
                     <div id="divdata">
-                        <input type="number" name="data" id="data">
+                        <input type="text" name="data" id="data">
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@
             <section id="payment">
                     <label for="#">Forma de Pagamento</label>
                 <div>
-                    <input class="radio" type="radio" name="formpag" id="radiomoney">
+                    <input class="radio" type="radio" name="formpag" id="radiomoney" checked>
                     <label for="radiomoney">Dinheiro</label>
 
                     <input class="radio" type="radio" name="formpag" id="radiocheq">
@@ -89,6 +89,8 @@
     </main>
     <footer>
         <p>Feito por <a href="#">Emerson Rodrigues</a> | Fazendo o Curso em Vídeo | &copy;2022</p>
-    </footer>    
+    </footer>   
+    
+    <script src="script.js"></script>
 </body>
 </html>
