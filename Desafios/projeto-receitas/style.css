@@ -254,6 +254,7 @@ footer a:hover{
         position: relative;
         display:block;
         flex-wrap: wrap;
+        z-index: 0;
     } 
     #newslater div{
         position: absolute;
@@ -340,7 +341,7 @@ footer a:hover{
 
         margin-right: 0px;
         padding: 0 10px 0.5rem 0;;
-        z-index: 0;
+        z-index: 1;
         background-color: var(--cor5);
         border-radius: 0 0 10px 10px;
         margin-top: -25px;
