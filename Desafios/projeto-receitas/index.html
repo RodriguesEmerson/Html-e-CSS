@@ -13,14 +13,30 @@
             <img src="imagens/logo.png" alt="logo">
             <span>Projeto Receitas</span>
         </div>
-        <nav>
-            <ul type="none">
-                <li><a href="#">Mais Acessadas</a></li>
-                <li><a href="#">Pro Café</a></li>
-                <li><a href="#">Refeições</a></li>
-                <li><a href="#">Lanches</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
+        <nav class="nav-bar">
+            <div class="computer-menu-nav">
+                <ul type="none">
+                    <li class="nav-item"><a href="#">Mais Acessadas</a></li>
+                    <li class="nav-item"><a href="#">Pro Café</a></li>
+                    <li class="nav-item"><a href="#">Refeições</a></li>
+                    <li class="nav-item"><a href="#">Lanches</a></li>
+                    <li class="nav-item"><a href="#">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile-icon-nav">
+                    <img onclick="menushow()" calss="icon-mobile" src="imagens/icon-mobile.png" alt="icon">
+            </div>
+            <div class="mobile-menu-nav">
+                <ul type="none">
+                    <li class="nav-item"><a href="#">Mais Acessadas</a></li>
+                    <li class="nav-item"><a href="#">Pro Café</a></li>
+                    <li class="nav-item"><a href="#">Refeições</a></li>
+                    <li class="nav-item"><a href="#">Lanches</a></li>
+                    <li class="nav-item"><a href="#">Contato</a></li>
+                </ul>
+            </div>
+           
         </nav>
     </header>
     <main id="container">
@@ -64,6 +80,8 @@
                 
             </div>
         </section>
+        <section>
+            <hr>
             <div id="newslater">
                 <div id="new1">
                     <label for="nome-newslater">Nome:</label>
@@ -77,6 +95,8 @@
 
                 <div id="buttom"><span>Receber Novidades</span></div>
             </div>
+            <hr>
+        </section>
         <section id="resumo">
             <div class="colum">
                 <a href="#">
@@ -144,6 +164,6 @@
         <p>Feito <strong><a href="rodriguesemerson.github.io">Emerson Rodrigues </a></strong>| &copy;2022</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  Facilis deserunt expedita ipsam aperiam ad ut unde, soluta esse in. Culpa impedit <br>nisi tenetur repudiandae nemo illum voluptatibus facere tempora. Omnis.</p>
     </footer>
-      
+      <script src="script.js"></script>
 </body>
 </html>

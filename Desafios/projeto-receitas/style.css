@@ -46,7 +46,6 @@ header img{
 header nav ul{
     display: flex;
     align-items: center;
-    justify-content: baseline;
 }
 header nav a{
     background-color:var(--cor3);
@@ -75,6 +74,10 @@ nav li:nth-child(4){
 }
 nav li:nth-child(5){
     transition: all 300ms ease-in-out;
+}
+/*NAV MOBILE*/
+.mobile-menu-nav, .mobile-icon-nav{
+    display: none;
 }
 /*DESTAQUE*/
 #destaque{
@@ -124,6 +127,9 @@ nav li:nth-child(5){
     text-align: center;
 }
 /*NEWS LATER*/
+hr{
+    opacity: 0.4;
+}
 #newslater{
     display: flex;
     justify-content: center;
@@ -159,7 +165,7 @@ nav li:nth-child(5){
 #buttom:hover{
     margin-top: -5px;
 }
-#buttom:nth-child(5){
+#buttom:nth-last-child(1){
     transition: all 300ms ease-in-out;
 }
 #email-newlater{
@@ -229,27 +235,15 @@ footer a:hover{
         width: 250px;
     }
     /*NEWS LATER*/
-    /*RESULMO*/
-    #resumo{
-
-        columns: 2 ;
-    }
-    #resumo a{
-        text-decoration: none;
-        color: var(--cor5);
-        width: 100%;
-    }
-    #resumo a:hover{
-        color:var(--cor6);
-    }
     #newslater{
+        width: 600px;
         position: relative;
         display:block;
         flex-wrap: wrap;
     } 
     #newslater div{
         position: absolute;
-        margin-left: 20vw;
+        margin-left: 3vw;
     }
     #new1, #new2{
         width: 330px;
@@ -270,80 +264,85 @@ footer a:hover{
         font-size: 13px;
     }
     #buttom{
-        position: absolute;
+    
         left: 70%;
         top: 50%;
         padding: 5px;
         width: 150px;
         height: 23px;
         margin-left: 20px;
-
-        transform: translate(-30vw, -50%)
+    
+        transform: translate(-50%, -50%)
     }
     #buttom:hover{
-        margin: 0 20px ;
+        margin: auto ;
         background-color: var(--cor2);
+    }
+        /*RESULMO*/
+        #resumo{
+    
+            columns: 2 ;
+        }
+        #resumo a{
+            text-decoration: none;
+            color: var(--cor5);
+            width: 100%;
+        }
+        #resumo a:hover{
+            color:var(--cor6);
+      
     }
 }
+
 /*RESPONSIVE 830px*/
 @media screen and (max-width: 830px){
-    /*HEADER*/
-    /*NAV*/
-    nav{
-        margin-top: 170px;
-        background-color: var(--cor5);
-        height:260px;
-        width: 180px;
+    nav li:hover{
+        margin-top: 0;
+    }
+
+    header{
+        display: flex;
+        align-items: initial;
+        padding: 0;
+    }
+    #logo{
+        position: inherit;
+    }
+    .nav-bar{
+        margin-right: 0px;
+        padding: 0 10px 0.5rem 0;;
         z-index: 0;
+        background-color: var(--cor5);
         border-radius: 0 0 10px 10px;
-    } 
-    header nav ul{   
-        margin-top: -10px;     
-        padding: 10px;
+        margin-top: -25px;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+        margin-right: 10px;
+    }
+    .nav-item{
+        display: none;
+    }
+    .mobile-icon-nav{
+        display: block;
+        cursor: pointer;
+        text-align: right;
+    }
+    .mobile-menu-nav ul{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-       
-    }
-    header nav ul li{
-        line-height: 30px;
-        width: 150px;
-    }
-    header nav a{
-        display: block;
-        background-color:var(--cor3);
-        margin: 10px 0 0 0;
-        width: 93%;
-        padding: 5px;
         text-align: center;
-    }
-    nav li:hover{
-        margin: 0;
-    }
-    nav a:hover{
-        background-color: var(--cor2);
-    }
+        justify-content: center;
+        margin-top: 20px;
+        height: 150px;
   
-    /*DESTAQUE*/
-    /*NEWS LATER*/
-    #newslater{
-        position: relative;
-        display:block;
-        flex-wrap: wrap;
-    } 
-    #newslater input{
-        height: 20px;
-        border-radius: 3px;
-        border: 1px solid var(--cor0);
-        margin-left: 15px;
     }
-    #newslater label{
+    .mobile-menu-nav .nav-item{
         display: block;
-        color: var(--cor0);
-        padding: 10px 5px 0 20px;
-        font-size: 13px;
+        padding-top: 1rem;
     }
-    
-    /*RESULMO*/
+    .mobile-menu-nav a{
+        background-color: transparent;
+    }
+    .open{
+        display: block;
+    }
 }
