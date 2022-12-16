@@ -315,7 +315,7 @@ footer a:hover{
         margin-top: 0;
     }
 
-    /*DESTAQUE*/
+    
        /*DESTAQUE*/
 
     #dest4{
@@ -326,9 +326,11 @@ footer a:hover{
         align-items: initial;
         padding: 0;
     }
+    /*NAV BAR*/
     .nav-bar{
-        min-width: 60px;
-        min-height: 80px;
+        min-width: 40px;
+        min-height: 65px;
+        max-width: 130px;
         display:block;
     
 
@@ -348,20 +350,28 @@ footer a:hover{
         display: block;
         cursor: pointer;
         text-align: right;
+
+    }
+    .mobile-icon-nav img{
+        height:30px !important;
     }
     .mobile-menu-nav ul{
         display: flex;
         flex-direction: column;
         text-align: center;
-        justify-content: center;
-        margin-top: 20px;
+        justify-content:center;
+        margin-top: 35px;
+        padding-left: 10px;
         height: 150px;
     }
     .mobile-menu-nav .nav-item{
         display: block;
-        padding-top: 1rem;
+        padding: 0.3rem 0 1rem 0;
     }
     .mobile-menu-nav a{
+        margin: 0;
+        padding-right: 0px;
+        text-align: center;
         background-color: transparent;
     }
     .open{

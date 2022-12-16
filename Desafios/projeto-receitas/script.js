@@ -4,10 +4,10 @@ function menushow(){
     let img = document.querySelector('icon-mobile')
     if(menumobile.classList.contains('open')){
         menumobile.classList.remove('open');
-        nav.style.height='50px'
+        nav.style.height='65px'
 
     }else{
         menumobile.classList.add('open')
-        nav.style.height='270px'
+        nav.style.height='285px'
     }
 }
