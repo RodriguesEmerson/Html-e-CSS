@@ -233,6 +233,9 @@ footer a:hover{
 /*RESPONSIVE 1000px*/
 @media screen and (max-width: 1000px){
     /*HEADER*/
+    #logo{
+        padding: 10px;
+    }
     /*NAV*/
     /*DESTAQUE*/
     #destaque p{
@@ -298,6 +301,10 @@ footer a:hover{
 }
 
 @media screen and (min-width: 830px){
+    #container{
+        width: 98vw;
+        position: relative;
+    }
     .nav-bar{
         height: 50px !important;
     }
@@ -481,8 +488,8 @@ footer a:hover{
     }
     .resu{
         max-width: 180px;
-        padding: 5px 0 0 2vw;
-        width: 150px;
+        padding: 5px 0 0 1vw;
+        width: 40vw;
         display: block;
         text-align: justify;
         margin-right: 0;
@@ -498,7 +505,7 @@ footer a:hover{
     .resu img{
         display: block;
         padding: 5px 0 5px 0 !important;
-        width: 150px !important;
+        width: 40vw !important;
         margin: 0;
     }
 }
