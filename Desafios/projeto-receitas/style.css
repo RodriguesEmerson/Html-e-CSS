@@ -235,6 +235,9 @@ footer a:hover{
     /*HEADER*/
     /*NAV*/
     /*DESTAQUE*/
+    #destaque p{
+        font-size: 13px;
+    }
     .dest{
         height: 40vw;
         width: 250px;
@@ -291,7 +294,6 @@ footer a:hover{
         }
         #resumo a:hover{
             color:var(--cor6);
-      
     }
 }
 
@@ -307,6 +309,8 @@ footer a:hover{
     }
 
     /*DESTAQUE*/
+       /*DESTAQUE*/
+
     #dest4{
         display: none;
     }
@@ -358,15 +362,84 @@ footer a:hover{
     }
 }
 @media screen and (max-width: 750px){
-    /*RESUMO*/
+ 
+   /*RESUMO*/
+   #resumo{
+    columns: 2 ;
+    text-align: center;
+    }
     .resu{
-        align-items:  center;
-        font-size: 13px;
+        padding: 10px;
+        display: block;
+        text-align: justify;
+        width: 210px;
+    }
+    .resu h3{
+        margin: 0 0 5px 0;
+    }
+    .resu p{
+        font-size: 15px;
+        margin-top: 0;
     }
     .resu img{
-        height: 130px;
-        width: 100px;
-        margin-left: -10px;
-
+        display: block;
+        height: 100%;
+        margin-left: 0px;
+        margin: auto;
+        padding-bottom: 10px !important;
+    }
+}
+@media screen and (max-width: 635px){
+    /*NEWS LATER*/
+    #newslater{
+        width: 90%;
+    } 
+    #email-newlater{
+        width: 250px;
+    }
+    #newslater input{ 
+        margin-left: 5%;
+    }
+    #newslater label{
+        margin-left: 5%;
+    }
+    #buttom{
+        left: 80%;
+        width: 70px;
+        height: 50px;
+    }
+ }
+@media screen and (max-width: 600px){
+    
+    .texto{
+        width: 100%;
+    }
+    .texto p{
+        display: none;
+    }
+    .texto span{
+        margin-bottom: 10px;
+    }
+       /*RESUMO*/
+   #resumo{ 
+    columns: 2 ;
+    }
+    .resu{
+        max-width: 180px;
+        padding: 10px;
+        display: block;
+        text-align: justify;
+    }
+    .resu h3{
+        margin: 0 0 5px 0;
+    }
+    .resu p{
+        font-size: 15px;
+        margin-top: 0;
+    }
+    .resu img{
+        display: block;
+        height: 100%;
+        margin: 0;
     }
 }
