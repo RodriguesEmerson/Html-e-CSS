@@ -45,11 +45,7 @@ header img{
 }
 /*NAV BAR*/
 
-@media screen and (max-width: 830px){
-.nav-bar{
-    min-width: 40px;
-    height: 65px;
-}
+
 
 .nav-bar{
     min-height: 50px; 
@@ -337,7 +333,7 @@ footer a:hover{
     /*NAV BAR*/
     .nav-bar{
         min-width: 40px;
-        min-height: 65px;
+        height: 65px;
         max-width: 130px;
         display:block;
     
