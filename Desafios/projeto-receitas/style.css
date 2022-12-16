@@ -8,6 +8,7 @@
     --cor4:#F2441D;
     --cor5:rgb(7, 29, 63);
     --cor6:rgb(20, 76, 161);
+    --largura: 615px;
 }
 body{
     margin: 0px;
@@ -42,7 +43,11 @@ header img{
     font-size: 1em;
     padding-left: 10px;
 }
-/*NAV*/
+/*NAV BAR*/
+.nav-bar{
+    min-height: 50px; 
+    max-width: 615px;
+}
 header nav ul{
     display: flex;
     align-items: center;
@@ -251,7 +256,7 @@ footer a:hover{
     #new2{
         margin-top: 50px;
     }
-    #newslater input{
+    #newslater input{ 
         height: 20px;
         border-radius: 3px;
         border: 1px solid var(--cor0);
@@ -274,10 +279,6 @@ footer a:hover{
     
         transform: translate(-50%, -50%)
     }
-    #buttom:hover{
-        margin: auto ;
-        background-color: var(--cor2);
-    }
         /*RESULMO*/
         #resumo{
     
@@ -294,21 +295,32 @@ footer a:hover{
     }
 }
 
+@media screen and (min-width: 830px){
+    .nav-bar{
+        height: 50px !important;
+    }
+}
 /*RESPONSIVE 830px*/
 @media screen and (max-width: 830px){
     nav li:hover{
         margin-top: 0;
     }
 
+    /*DESTAQUE*/
+    #dest4{
+        display: none;
+    }
     header{
         display: flex;
         align-items: initial;
         padding: 0;
     }
-    #logo{
-        position: inherit;
-    }
     .nav-bar{
+        min-width: 60px;
+        min-height: 80px;
+        display:block;
+    
+
         margin-right: 0px;
         padding: 0 10px 0.5rem 0;;
         z-index: 0;
@@ -333,7 +345,6 @@ footer a:hover{
         justify-content: center;
         margin-top: 20px;
         height: 150px;
-  
     }
     .mobile-menu-nav .nav-item{
         display: block;
@@ -344,5 +355,18 @@ footer a:hover{
     }
     .open{
         display: block;
+    }
+}
+@media screen and (max-width: 750px){
+    /*RESUMO*/
+    .resu{
+        align-items:  center;
+        font-size: 13px;
+    }
+    .resu img{
+        height: 130px;
+        width: 100px;
+        margin-left: -10px;
+
     }
 }
