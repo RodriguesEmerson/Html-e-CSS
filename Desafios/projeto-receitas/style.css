@@ -443,3 +443,66 @@ footer a:hover{
         margin: 0;
     }
 }
+@media screen and (max-width: 440px){
+    /*DESTAQUE*/
+    .dest{
+        margin: 3px;
+        font-weight: normal;
+    }
+    /*NEWSLATER*/
+    #newslater{
+        height: 150px;
+        padding: 0px;
+    }
+
+    #new1, #new2{
+        width: 100%;
+    }
+    #newslater input{
+        margin: 0;
+    }
+    #newslater label {
+        margin-left: 0px;
+        padding: 10px 0 0 0;
+    }
+    #buttom{
+        left: 50%;
+        top: 82.5%;
+        padding: 5px;
+        width: 150px;
+        height: 23px;
+        margin-left: 20px;
+    
+        transform: translate(-50%, -50%)
+    }
+    /*RESUMO*/
+    #resumo{ 
+        columns: 2 ;
+    }
+    .resu{
+        max-width: 180px;
+        padding: 5px 0 0 0;
+        width: 130px;
+        display: block;
+        text-align: justify;
+        margin-right: 0;
+    }
+    .resu h3{
+        margin: 0 0 5px 0;
+        font-size: 17px;
+    }
+    .resu a{
+        width: 130px;
+    }
+    
+    .resu p{
+        margin-top: 0;
+       
+    }
+    .resu img{
+        display: block;
+        padding: 5px 0 5px 0 !important;
+        width: 130px !important;
+        margin: 0;
+    }
+}
