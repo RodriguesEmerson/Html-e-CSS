@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabela Ecercício 14</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption{
+            background-color: teal;
+            padding: 10px;
+            font-weight: bold;
+            color: white;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        table td, th{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .media{
+            text-align: left;
+        }
+        .cor{
+            background-color: gray;
+            color: white;
+        }
+        #tabela{
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela Responsiva</h1>
+    <div id="tabela">
+        <table>
+            <caption>Notas do Bimentre</caption>
+            <thead>
+                <tr class="cor">
+                    <th  scope="col" rowspan="2">Área</th>
+                    <th  scope="col" rowspan="2">Disciplina</th>
+                    <th  scope="colgroup" colspan="2">Notas</th>
+                    <th  scope="col" rowspan="2">Média</th>
+                </tr>
+                <tr>
+                    <th class="cor" scope="col">Nota1</th>
+                    <th class="cor" scope="col">Nota2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="rowgroup" rowspan="4">Exatas</th>
+                    <td>Matemática</td>
+                    <td class="num">8.0</td>
+                    <td class="num">7.9</td>
+                    <td class="num">5.7</td>
+                </tr>
+                <tr>
+                    <td>Física</td>
+                    <td class="num">9.2</td>
+                    <td class="num">8.2</td>
+                    <td class="num">3.9</td>
+                </tr>
+                <tr>
+                    <td>Qrímica</td>
+                    <td class="num">5.3</td>
+                    <td class="num">6.7</td>
+                    <td class="num">9.2</td>
+                </tr>
+                <tr>
+                    <td>Biologia</td>
+                    <td class="num">6.1</td>
+                    <td class="num">8.2</td>
+                    <td class="num">9.3</td>
+                </tr>
+                <tr class="cor">
+                    <th scope="row" class="media" colspan="4">Média de Exatas</th>
+                    <td class="num">7.2</td>
+                </tr>
+                <tr>
+                    <th scope="rowgroup" rowspan="2">Humanas</hd>
+                    <td>Hitória</td>
+                    <td class="num">3.4</td>
+                    <td class="num">9.2</td>
+                    <td class="num">5.3</td>
+                </tr>
+                <tr>
+                    <td>Geografia</td>
+                    <td class="num">5.4</td>
+                    <td class="num">2.6</td>
+                    <td class="num">9.3</td>
+                </tr>
+                <tr class="cor">
+                    <th scope="row" class="media" colspan="4">Média de Humanas</th>
+                    <td class="num" >5.6</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
