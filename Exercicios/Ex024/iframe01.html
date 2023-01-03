@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estudos de Iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testanto o uso  Texto lternativo caso o navegador
+    nao suporte iframes</h1>
+    <p>Acessando sites para estudos</p>
+    <ul>
+        <li><a href="pagina1.html" target="iframe">Pagina-1</a></li>
+        <li><a href="pagina2.html" target="iframe">Pagina-2</a></li>
+    </ul>
+    <iframe src="" name="iframe" frameborder="1" width="95%" height="400px" srcdoc="<h1 style='font-family:Arial'>Clique em um dos links acima</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatibus impedit exercitationem culpa nisi rerum ipsam cum nobis vitae, aliquam, est quasi eaque consectetur dolorum atque vel ducimus odit blanditiis.</p>" >Texto Alternativo</iframe>
+</body>
+</html>
