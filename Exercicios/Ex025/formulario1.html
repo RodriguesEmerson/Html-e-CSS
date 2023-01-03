@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forumlários</title>
+</head>
+<body>
+    <h1>Esutdando Forumlários</h1>
+    <form action="fomulario.php" method="POST" autocomplete="on">
+        <p>
+            <label for="nome">Nome:</label> 
+            <input type="text" name="nome" id="nome" minlength="5" maxlength="20" required placeholder="Digite seu nome" autocomplete="name">
+        </p> 
+        <p>
+            <label for="sobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="sobrenome" size="10">
+        </p>
+        <p>
+            <input type="submit" name="bt-enviar" id="bt-enviar" value="Enviar">
+            <input type="reset" name="" id="" autocomplete="nickname">
+        </p>
+    </form>
+</body>
+</html>
