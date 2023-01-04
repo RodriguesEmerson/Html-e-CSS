@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Praticando Estudos</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(61, 61, 61);
+            background-color: lightgray;
+        }
+        header{
+            background-color: rgb(47, 126, 71);
+            color: white;
+            height: 50px;
+            text-align: center;
+            padding-top: 10px;
+        }
+        .container{
+            background-color: white;
+            width: 800px;
+            height: calc(100vh - 50px);
+            margin: auto;
+            padding-top: 20px;
+        }
+        p{
+            margin: 10px;
+        }
+        fieldset{
+            padding: 10px;
+            width: 70%;
+            border-radius: 10px;
+            margin: 0 auto 20px;
+        }
+        legend{
+            margin-left: 30px;
+        }
+        input:not(.radio){
+            height: 25px;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+        input:not(.radio):focus{
+            height: 25px;
+            outline-color: rgb(71, 71, 71);
+        }
+        input:not(#datanasc){
+            text-indent: 10px;
+        }
+        #email, #lagradouro{
+            width: 80%;
+            margin-bottom: 10px;;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Formulário</h1></header>
+    <main class="container">
+        <form action="cadastro.js" autocomplete="on">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <p>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" autocomplete="given-name">
+                </p>
+                <p>
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="sobrenome" autocomplete="family-name" >
+                </p>
+                <p>
+                    <label for="datanasc">Data de Nascimento:</label>
+                    <input type="date" name="datanasc" id="datanasc"  autocomplete="bday">
+                </p>
+                <p>
+                    <label for="tel">Telefone:</label>
+                    <input type="tel" name="tel" id="tel" autocomplete="tel">
+                </p>
+                <p>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" autocomplete="email">
+                </p>
+                <p> Sexo:
+                    <input class="radio" type="radio" name="sexo" id="masc" checked>
+                    <label for="masc">Masculino</label>
+
+                    <input class="radio" type="radio" name="sexo" id="fem">
+                    <label for="fem">Feminino</label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Endereço</legend>
+                <p>
+                    <label for="cep">CEP</label>
+                    <input type="number" name="cep" id="cep" autocomplete="postal-code">
+                </p>
+                <p>
+                    <label for="estado">Estado:</label>
+                    <input type="text" name="estado" id="estado">
+                </p>
+                <p>
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" name="cidade" id="cidade">
+                </p>
+                <p>
+                    <label for="lagradouro">Lagradouro</label>
+                    <input type="text" name="lagradouro" id="lagradouro" autocomplete="street-address">
+
+                    <label for="numbero">N°</label>
+                    <input type="number" name="numero" id="numero">
+                </p>
+            </fieldset>
+
+
+        </form>
+    </main>
+    
+</body>
+</html>
