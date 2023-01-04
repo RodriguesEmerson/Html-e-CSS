@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="test.js" method="POST" autocomplete="off">
+        <fieldset>
+            <legend>Exemplos de Selects</legend>
+            <label for="estado">Estado:</label>
+            <select name="estado" id="estado">
+                <optgroup label="Região Sudeste">
+                    <option>Selecione um estado</option>
+                    <option>Minas Gerais</option>
+                    <option>São Paulo</option>
+                    <option>Rio de Janeiro</option>
+                    <option>Espírito Santo</option>
+                </optgroup>
+            </select><br><br>
+            <label for="profissao">Profissão:</label>
+            <input type="text" name="prof" id="prof" list="listprof">
+            <datalist id="listprof">
+                <option>Developes</option>
+                <option>Fotógrafo</option>
+                <option>Cabeleireiro</option>
+                <option>Motorista</option>
+            </datalist>
+        </fieldset>
+        <fieldset>
+            <legend>OutPut</legend>
+            <label for="n1">1-Número</label>
+            <input type="number" name="n1" id="n1" oninput="soma.innerHTML=Number(n1.value) + Number(n2.value)"><br><br>
+
+            <label for="n2">2-Número</label>
+            <input type="number" name="n2" id="n2" oninput="soma.innerHTML=Number(n1.value) + Number(n2.value)"><br><br>
+
+            <label for="soma">Resultado</label>
+            <output id="soma">0</output>
+        </fieldset>
+        <fieldset>
+            <legend>Range com Output</legend>
+            <label for="range">Selecione um número:</label><br>
+            <input type="range" name="range" id="range" value="0" 
+            oninput="nivel.innerHTML=Number(range.value)"> <output id="nivel">0</output>
+        </fieldset>
+    </form>
+</body>
+</html>
