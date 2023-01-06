@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Formuálios</title>
+</head>
+<body>
+    <header>
+        <h1>Estudo de Formuálios</h1>
+    </header>
+    <main>
+        <section>
+            <form autocomplete="on" method="POST">
+                <fieldset >
+                    <legend>Dados Pessoais</legend>
+                    <div class="p-data nome">
+                        <label for="nome">Nome:*</label>
+                        <input type="text" name="nome" id="nome" autocomplete="given-name" minlength="3" required>
+                    </div>
+                    <div class="p-data sobrenome">
+                            <label for="sobrenome">Sobrenome:*</label>
+                            <input type="text" name="sobrenome" id="sobrenome" autocomplete="family-name" required>
+                    </div>
+
+                    <div class="p-data cpf" >
+                        <label for="cpf">CPF:*</label>
+                        <input type="text" name="cpf" id="cpf" minlength="11" maxlength="14" required>
+                    </div>
+
+                    <div class="p-data rg">
+                        <label for="rg">RG:</label>
+                        <input type="text" name="rg" id="rg">
+                    </div>
+                    <div class="p-data tel">
+                        <label for="tel">Telefone:</label>
+                        <input type="tel" name="tel" id="tel" autocomplete="tel" minlength="8" max="12">
+                    </div>
+                    <div class="p-data email">
+                        <label for="email">E-mail:*</label>
+                        <input type="email" name="email" id="email" autocomplete="email" required>
+                    </div>
+                    <div class="p-data">
+                        <label for="profissao">Profissão:</label>
+                        <input type="text" name="profissao" id="profissao" list="listprof">
+                            <datalist id="listprof">
+                                <option>Developer</option>
+                                <option>Assitente</option>
+                                <option>Mestre em TI</option>
+                                <option>Designer</option>
+                                <option>Dev Gamer</option>
+                            </datalist>
+                    </div>
+                    <div class="p-data sexo">
+                        Sexo:
+                        <input type="radio" name="sexo" id="masc" checked>
+                        <label for="masc">Maculino</label>
+                        
+                        <input type="radio" name="sexo" id="fem">
+                        <label for="fem">Feminino</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Endereço</legend>
+                    <div class="p-data lagradouro">
+                        <label for="lagradouro">Lagradouro:*</label>
+                        <input type="text" name="lagradouro" id="lagradouro" autocomplete="street-address" required>
+                    </div>
+                    <div class="p-data num-casa">
+                            <label for="num-casa">Número:*</label>
+                            <input type="number" name="num-casa" id="num-casa" maxlength="4" required>
+                    </div>
+                    <div class="p-data cidade">
+                        <label for="cidade">Cidade:*</label>
+                        <input type="text" name="cidade" id="cidade" required>
+                    </div>
+                    <div class="p-data estado">
+                        <label for="estado">Estado*</label>
+                        <input type="text" name="estado" id="estado" required>
+                    </div>
+                </fieldset>
+                <div class="botoes">
+                    <input type="button" value="Enviar" id="submit">
+                    <input type="reset" id="reset">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="cadastro.js"></script>
+</body>
+</html>

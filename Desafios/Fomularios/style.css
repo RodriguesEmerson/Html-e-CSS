@@ -1,0 +1,91 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400&display=swap');
+
+body{
+    font-family:'Hanken Grotesk' ,Arial, Helvetica, sans-serif;
+    background-color: rgb(236, 236, 236);
+}
+h1{
+    text-align: center;
+    color: rgb(20, 131, 206);
+}
+main{
+    width: 60%;
+    margin: auto;
+    font-size: 1.1em;
+    padding: 10px;
+    background-color: white;
+}
+fieldset{
+    border: none;
+    padding: 0px 20px;
+   
+}
+legend{
+    font-weight: 600;
+}
+.p-data{
+    margin: 10px 0; 
+}
+.p-data input{
+    height: 32px;
+    font-size: 17px;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-right: 10px;
+    color: rgb(59, 59, 59);
+}
+#masc, #fem{
+    height: 14px;
+    margin-right: 0
+}
+#nome, #sobrenome{
+    width: 330px;
+}
+#email{
+    width: 600px;
+}
+#num-casa{
+    width: 100px;
+}
+#lagradouro{
+    width: 535px;
+}
+.p-data{
+    display: inline-block;
+}
+
+.p-data label{
+    display: block;
+}
+.sexo,.email, .tel{
+    display: block;
+}
+
+.sexo label{
+    display: inline-block;
+}
+.botoes{
+    text-align: center;
+    margin-top: 30px;
+}
+#submit, #reset{
+    height: 35px;
+    width: 150px;
+    border-radius: 30px;
+    border: 1px solid rgb(20, 131, 206);
+    cursor: pointer;
+}
+#submit:hover, #reset:hover{
+    background-color: rgb(20, 131, 206);
+}
+.botoes input:nth-child(n){
+    transition: all 300ms ease-in-out;
+}
+.invalido input{
+    border-color: rgba(255, 0, 0, 0.548);
+}
+.valido input{
+    border-color: green;
+}
