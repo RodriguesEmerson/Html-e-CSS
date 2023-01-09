@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login Responsivo</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/media-query.css">
 </head>
 <body>
     <main class="container">
@@ -17,12 +18,17 @@
                 <form action="" autocomplete="on" method="POST">
                     <span class="title">Login</span>
                     <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta!</p>
+
                     <div id="usuario">
+                        <img class="icon" src="user-img.png" alt="user icon">
                         <input type="email" name="email" id="email" placeholder="E-mail">
                     </div>
+
                     <div id="password">
+                        <img class="icon" src="key-img.png" alt="img">
                         <input type="password" name="password" id="passwordinput" placeholder="Senha">
                     </div>
+
                     <input type="button" value="Entrar" name="submit" id="submit">
                     <input type="button" value="Esqueci a senha" name="forgot" id="forgot">
                 </form>

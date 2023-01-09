@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px){
+    .login{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 0 0 0 20px;
+    }
+    .cont-img{
+        width: 35%;
+        margin: 0 0 0 15px;
+    }
+    .cont-form{
+        width: 80%;
+    }
+    form{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 992px){
+    .login{
+        flex-direction: row;
+        padding: 0 20px 0 0;
+    }
+    .cont-img{
+        width: 50%;
+        height: 400px;
+        margin: 0 15px 0 0;
+    }
+}

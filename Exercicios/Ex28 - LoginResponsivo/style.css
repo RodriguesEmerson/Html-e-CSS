@@ -7,21 +7,36 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: calc(100vw - 50px);
+
     height: calc(100vh - 50px);
 }
+.cont-form{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.cont-form .title{
+    font-weight: bold;
+    font-size: 1.6em;
+    color: rgb(37, 37, 37);
+}
 .login{
+    width: 90%;
+    max-width: 900px;
     display: flex;
     align-items: center;
-    padding: 0 20px 0 0;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 10px;
     background-color: white;
 }
 .cont-img{
     position: relative;
-    width: 350px;
+    width: 110%;
     height: 300px;
     overflow: hidden;
-    margin-right: 15px;
+    margin: -10px -10px 15px -10px;
 }
 .cont-img img{
     position: absolute;
@@ -30,22 +45,30 @@ body{
     object-fit: cover;
     object-position: center right;
 }
-.cont-form{
-    text-align: center;
-}
-.cont-form .title{
-    font-weight: bold;
-    font-size: 1.6em;
-    color: rgb(37, 37, 37);
-}
+
 #email, #passwordinput{
-    height: 30px;
+    height: 28px;
     width: 90%;
-    margin-bottom: 10px;
     border-radius: 4px;
     border: 1px solid gray;
     outline: none;
 }
+
+#usuario, #password{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    background-color: rgb(103, 0, 199);
+    border-radius: 5px;
+    height: 32px;
+    padding: 3px;
+    margin: 0 auto 10px auto;
+    overflow: hidden;
+}
+.icon{
+    width: 30px;
+}
+
 #submit, #forgot{
     height: 30px;
     width: 90%;
