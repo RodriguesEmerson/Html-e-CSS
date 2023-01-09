@@ -38,6 +38,7 @@ ul li a:hover{
 main{
     padding: 15px;
     width: 90%;
+    max-width: 800px;
     background-color: white;
     border-radius: 10px;
     margin: auto;
