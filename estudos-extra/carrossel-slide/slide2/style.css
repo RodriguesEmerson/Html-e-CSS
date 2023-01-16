@@ -80,20 +80,6 @@ header{
     object-fit: cover;
 }
 
-/*#radio-1:checked ~ .troca-imagem{
-    margin-left: 0%
-}
-#radio-2:checked ~ .troca-imagem{
-   margin-left: -100%;
-}*/
-
-.esconder{
-    visibility: hidden;
-    
-}
-.mostrar{
-    visibility: visible;
-}
 /****TRASICAO PRA DIREITA*/
 .direita{
     animation: troca-imagem-direita 1s forwards;

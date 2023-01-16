@@ -5,8 +5,8 @@ let imgONE = document.querySelector('#img-ti-1')
 let imgTWO = document.querySelector('#img-ti-2')
 
 let troca_imagem = document.querySelector('.troca-imagem')
-
 var numIMG = 1
+
 function carregaImagens(){
     imgONE.setAttribute('src', `imagens/img-${numIMG}.jpg`)
     imgTWO.setAttribute('src', `imagens/img-${numIMG + 1}.jpg`)
@@ -26,21 +26,22 @@ prev.addEventListener('click', function(){
         imgONE.setAttribute('src', `imagens/img-${numIMG}.jpg`)
         imgTWO.setAttribute('src', srcIMG_ONE)
         
+
         //Adiciona o efeito de transição
         if(troca_imagem.classList.contains('esquerda')){
             troca_imagem.classList.remove('esquerda', 'direita', 'direita2')
             troca_imagem.classList.add('esquerda2')
         }else{
-            troca_imagem.classList.add('esquerda')
             troca_imagem.classList.remove('esquerda2', 'direita', 'direita2')
+            troca_imagem.classList.add('esquerda') 
         }
-        
+
     }else{
         numIMG--
         if(numIMG<1){
             numIMG = 5
         }
-        troca_imagem.classList.remove('direita', 'direita2')
+        troca_imagem.classList.remove('esquerda2','direita', 'direita2')
         troca_imagem.classList.add('esquerda')
     }
 })
@@ -57,8 +58,9 @@ prox.addEventListener('click', function(){
             numIMG = 1
         }
 
-        imgONE.setAttribute('src', imgSRC_TWO)
         imgTWO.setAttribute('src', `imagens/img-${numIMG}.jpg`)
+        imgONE.setAttribute('src', imgSRC_TWO)
+        
 
         //Adiciona o efeito de transição
         troca_imagem.style.margin = '0 0 0 0'
@@ -66,8 +68,8 @@ prox.addEventListener('click', function(){
            troca_imagem.classList.remove('direita', 'esquerda', 'esquerda2')
            troca_imagem.classList.add('direita2')
          }else{
-        troca_imagem.classList.add('direita')
-        troca_imagem.classList.remove('direita2', 'esquerda', 'esquerda2')
+            troca_imagem.classList.remove('direita2', 'esquerda', 'esquerda2')
+            troca_imagem.classList.add('direita')
          }
 
     }else{
@@ -75,7 +77,7 @@ prox.addEventListener('click', function(){
         if(numIMG>5){
             numIMG = 1
         }
-        troca_imagem.classList.remove('esquerda', 'esquerda2')
+        troca_imagem.classList.remove('direita2','esquerda', 'esquerda2')
         troca_imagem.classList.add('direita')
     }
 })
