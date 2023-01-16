@@ -70,8 +70,6 @@ header{
     flex-direction: row;
     width: 200%;
     height: 105%;
-    transition: 1s;
-    
 }
 #radio-1, #radio-2{
     display: none;
@@ -91,11 +89,60 @@ header{
 
 .esconder{
     visibility: hidden;
+    
 }
 .mostrar{
     visibility: visible;
 }
-.esquerda{
-    margin-left: 0%;
+/****TRASICAO PRA DIREITA*/
+.direita{
+    animation: troca-imagem-direita 1s forwards;
+}
+.direita2{
+    animation: troca-imagem-direita2 1s forwards;
 }
 
+@keyframes  troca-imagem-direita{
+    0%{
+        left: 0;
+    }
+    100%{
+        left:-100%;
+    }
+}
+@keyframes  troca-imagem-direita2{
+    0%{
+        left: 0;
+    }
+    100%{
+        left:-100%;
+    }
+}
+
+/***************************************/
+/****TRASICAO PRA DIREITA*/
+.esquerda{
+    animation: troca-imagem-esquerda 1s forwards;
+}
+.esquerda2{
+    animation: troca-imagem-esquerda2 1s forwards;
+}
+
+@keyframes  troca-imagem-esquerda{
+    0%{
+        left:-100%;
+    }
+    100%{
+        left:0%;
+    }
+}
+@keyframes  troca-imagem-esquerda2{
+    0%{
+        left:-100%;
+    }
+    100%{
+        left:0%;
+    }
+}
+
+/***************************************/
