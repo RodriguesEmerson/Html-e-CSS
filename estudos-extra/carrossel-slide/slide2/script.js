@@ -13,8 +13,7 @@ function carregaImagens(){
 }
 
 prev.addEventListener('click', function(){
-//imagens/img-2.jpg
-    
+
     let srcIMG_ONE = imgONE.getAttribute('src')
     
     let posi = troca_imagem.offsetLeft
@@ -25,10 +24,8 @@ prev.addEventListener('click', function(){
         }
 
         imgONE.setAttribute('src', `imagens/img-${numIMG}.jpg`)
-
         imgTWO.setAttribute('src', srcIMG_ONE)
         
-
         //Adiciona o efeito de transição
         if(troca_imagem.classList.contains('esquerda')){
             troca_imagem.classList.remove('esquerda', 'direita', 'direita2')
@@ -37,6 +34,7 @@ prev.addEventListener('click', function(){
             troca_imagem.classList.add('esquerda')
             troca_imagem.classList.remove('esquerda2', 'direita', 'direita2')
         }
+        
     }else{
         numIMG--
         if(numIMG<1){
@@ -45,9 +43,8 @@ prev.addEventListener('click', function(){
         troca_imagem.classList.remove('direita', 'direita2')
         troca_imagem.classList.add('esquerda')
     }
-
- 
 })
+
 prox.addEventListener('click', function(){
 
     let imgSRC_TWO = imgTWO.getAttribute('src')
@@ -63,6 +60,7 @@ prox.addEventListener('click', function(){
         imgONE.setAttribute('src', imgSRC_TWO)
         imgTWO.setAttribute('src', `imagens/img-${numIMG}.jpg`)
 
+        //Adiciona o efeito de transição
         troca_imagem.style.margin = '0 0 0 0'
          if(troca_imagem.classList.contains('direita')){
            troca_imagem.classList.remove('direita', 'esquerda', 'esquerda2')
@@ -71,7 +69,7 @@ prox.addEventListener('click', function(){
         troca_imagem.classList.add('direita')
         troca_imagem.classList.remove('direita2', 'esquerda', 'esquerda2')
          }
-        
+
     }else{
         numIMG++
         if(numIMG>5){
@@ -79,6 +77,5 @@ prox.addEventListener('click', function(){
         }
         troca_imagem.classList.remove('esquerda', 'esquerda2')
         troca_imagem.classList.add('direita')
-        
     }
 })
