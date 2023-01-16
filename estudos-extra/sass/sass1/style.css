@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 60px;
+  text-align: center;
+  background-color: green;
+}
+
+header h1 {
+  margin-bottom: 5px;
+}
+
+header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+header .menu a {
+  text-decoration: none;
+  color: white;
+}
+
+header .menu a:hover {
+  text-decoration: underline;
+}
+
+header .menu a:not(:nth-child(5)) {
+  margin-right: 15px;
+}
+
+.container {
+  margin: auto;
+  width: 800px;
+  padding: 15px;
+}
+
+.container ul {
+  list-style-type: none;
+}
+
+.container ul a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.container ul a:hover {
+  text-decoration: underline;
+}
+
+.container p {
+  text-indent: 30px;
+}
+/*# sourceMappingURL=style.css.map */
