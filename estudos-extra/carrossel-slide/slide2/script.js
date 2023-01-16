@@ -14,12 +14,13 @@ function carregaImagens(){
 
 prev.addEventListener('click', function(){
 
-    imgTWO.setAttribute('src', `imagens/img-${numIMG}.jpg`)
+    
     
     
     let posi = troca_imagem.offsetLeft
     if(posi === 0){
-
+        
+        imgTWO.setAttribute('src', `imagens/img-${numIMG}.jpg`)
 
         numIMG--
         if(numIMG<1){
@@ -74,7 +75,7 @@ prox.addEventListener('click', function(){
             troca_imagem.classList.remove('direita2', 'esquerda', 'esquerda2')
             troca_imagem.classList.add('direita')
          }
-         console.log('part1')
+
 
     }else{
         numIMG++
@@ -83,7 +84,6 @@ prox.addEventListener('click', function(){
         }
         troca_imagem.classList.remove('direita2','esquerda', 'esquerda2')
         troca_imagem.classList.add('direita')
-        console.log('part2')
 
     }
 })
