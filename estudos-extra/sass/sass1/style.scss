@@ -1,24 +1,28 @@
 @charset "UTF-8";
+@import "./variaveis.scss";
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 @mixin flexCenter($flex_direction){
     display: flex;
     flex-direction: $flex_direction;
     align-items: center;
     justify-content: center;
 }
-body{
+body{ 
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: $secundaryColor; 
 }
 header{
-    @include flexCenter(column);
+    @include flexCenter(column);                             
+
     height: 60px;
-    text-align: center;
+    text-align: center; 
     background-color: green;
     h1{
         margin-bottom: 5px;
@@ -29,31 +33,52 @@ header{
         a{
             text-decoration: none;
             color: white;
+            
             &:hover{
                 text-decoration: underline;
             }
+            &:not(:nth-child(5)){
+                margin-right: 20px;
+            }
         }
-        a:not(:nth-child(5)){
-            margin-right: 15px;
-        }
+        
     }
 }
 .container{
     margin: auto;
     width: 800px;
     padding: 15px;
+    h2{
+        text-align: center;
+        font-size: 30px; 
+        color: blue;
+    }
+    .conteudo{
+        @include flexCenter(row)
+    }
+    p{
+        text-indent: 30px;
+        line-height: 22px;
+    }
     ul{
         list-style-type: none;
         a{
             color: black;
             font-weight: bold;
             text-decoration: none;
+            font-style: italic;
             &:hover{
                 text-decoration: underline;
             }
+            &:after{
+                content: ' ola ';
+                color: blue;
+            }
+            &:before{
+                content: 'alo ';
+                color: red;
+            }
         }
-    }
-    p{
-        text-indent: 30px;
-    }
+    } 
 }
+ 

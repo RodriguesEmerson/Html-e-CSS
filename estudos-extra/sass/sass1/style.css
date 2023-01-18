@@ -8,6 +8,7 @@
 body {
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #cfcfcf;
 }
 
 header {
@@ -50,13 +51,40 @@ header .menu a:hover {
 }
 
 header .menu a:not(:nth-child(5)) {
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
 .container {
   margin: auto;
   width: 800px;
   padding: 15px;
+}
+
+.container h2 {
+  text-align: center;
+  font-size: 30px;
+  color: blue;
+}
+
+.container .conteudo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container p {
+  text-indent: 30px;
+  line-height: 22px;
 }
 
 .container ul {
@@ -67,13 +95,20 @@ header .menu a:not(:nth-child(5)) {
   color: black;
   font-weight: bold;
   text-decoration: none;
+  font-style: italic;
 }
 
 .container ul a:hover {
   text-decoration: underline;
 }
 
-.container p {
-  text-indent: 30px;
+.container ul a:after {
+  content: ' ola ';
+  color: blue;
+}
+
+.container ul a:before {
+  content: 'alo ';
+  color: red;
 }
 /*# sourceMappingURL=style.css.map */
