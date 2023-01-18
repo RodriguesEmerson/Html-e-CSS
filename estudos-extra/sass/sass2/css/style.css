@@ -1,0 +1,105 @@
+.header .link-1 {
+  font-size: 15px;
+}
+
+.header .link-2 {
+  font-size: 15px;
+}
+
+.header .link-3 {
+  font-size: 15px;
+}
+
+.header .link-4 {
+  font-size: 15px;
+}
+
+.header .link-5 {
+  font-size: 15px;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.red-text {
+  color: red;
+}
+
+.green-text {
+  color: green;
+}
+
+.yellow-text {
+  color: yellow;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.color-dois, .header-menu a {
+  color: orange;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80px;
+  background-color: #012638;
+}
+
+.header-title {
+  color: white;
+}
+
+.header-menu-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.header-menu li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.header-menu a {
+  text-decoration: none;
+}
+
+.header-menu a:hover {
+  color: #955e05;
+}
+
+.container {
+  padding: 15px;
+  text-indent: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.container p {
+  line-height: 1.5em;
+}
+
+footer {
+  text-align: center;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */

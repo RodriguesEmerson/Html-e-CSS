@@ -1,0 +1,31 @@
+$primaryColor: rgb(0, 128, 90);
+$secundaryColor: rgb(1, 38, 56);
+$corpadrao: rgb(190, 190, 190);
+$linksColor: rgb(149, 94, 5);
+
+@function set-text-color($color) {
+    @if lightness($secundaryColor) > 70{
+        @return rgb(61, 61, 61);
+    }@else{
+        @return rgb(255, 255, 255);
+    }
+}
+
+@mixin flexCenter($justify, $direction){
+    display: flex;
+    justify-content: $justify;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@for $i from 1 through 5{
+    .header .link-#{$i}{
+        font-size: 15px //* $i
+    }
+}
+
+$colors:  blue, red,  green,  yellow;
+
+@each  $color in $colors {
+    .#{$color}-text {color: $color};
+}
