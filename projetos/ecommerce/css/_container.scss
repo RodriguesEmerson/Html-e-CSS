@@ -1,0 +1,97 @@
+.container{
+    max-width: 1500px;
+    margin: auto;
+    min-height: calc(100vh - 135px);
+    .banner{
+        overflow: hidden;
+        margin: auto;
+        width: 100%;
+        height: 22vw;
+        margin-bottom: 15px !important;
+        border-radius: 10px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: bottom center;
+        }
+    }
+    .section-title{
+        margin: 30px 0 10px 0;
+        text-align: center;
+        font-size: 28px;
+    }
+}
+.container .produtos{ 
+    @include displayFlex(center, center, row);
+    flex-wrap: wrap;
+    gap: 10px 15px;
+    margin-bottom: 20px;                                                                                                                                        
+
+    .produto{
+        @include displayFlex(start, center, row-reverse);
+        position: relative;
+        width: 350px;
+        height: 170px;
+        padding: 13px 5px 5px 5px;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        text-decoration: none;
+        &-img{
+            width: 100px;
+        }
+        .produto-apresentacao{
+            
+            &-title{
+                font-size: 17px;
+                color: $titleProdColor;
+            }
+            &-desc{
+                font-size: 14px;
+                margin: 5px 0;
+                color: $textColor;
+            }
+            &-info{
+                position: absolute;
+                bottom: 5px;
+                right: 10px;
+                font-size: 13px;
+                color: $textColor;
+            }
+        }
+        .produto-apresentacao .precos{
+            &-produto{
+                display: block;
+                padding-right: 10px;
+                margin: 10px 0;
+                color: green;
+                font-weight: bold;
+                text-align: end;
+            }
+        }
+        .addTo_Car{
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+            height: 35px;
+            width: 140px;
+            border-radius: 8px;
+            background-color: lighten($primaryColor, 10);
+            border: 1px solid darken($primaryColor,5);
+            color: white;
+            cursor: pointer;
+            transition: background-color 300ms;
+            &:hover{
+                background-color: darken($primaryColor,5);
+            }
+        }
+    }
+}
+footer{
+    @include displayFlex(center, center, row);
+    height: 50px;
+    background-color: $primaryColor;
+    p{
+        text-align: center;
+    }
+}

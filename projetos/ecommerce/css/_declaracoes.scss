@@ -1,0 +1,25 @@
+//GLOBAL
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+//COLORS
+$primaryColor:rgb(255, 115, 0);
+$secundaryColor: rgb(0, 153, 179);
+$titleProdColor: rgb(37, 37, 37) ;
+$textColor: rgb(44, 44, 44);
+$linksHeaderColor: rgb(255, 255, 255);
+$linksHeaderColor_hover:rgb(136, 62, 1);
+$linksHeaderColor_mobile: rgb(255, 115, 0);
+$linksHeaderColor_hover_mobile:rgb(136, 62, 1);
+$buyButtonColor:rgb(0, 161, 81);
+
+//MIXINS
+@mixin displayFlex($align_items, $justify_content, $flex_direction) {
+    display: flex;
+    align-items: $align_items;
+    justify-content: $justify_content;
+    flex-direction: $flex_direction;
+}

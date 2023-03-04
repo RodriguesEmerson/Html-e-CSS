@@ -1,0 +1,126 @@
+@charset "UTF-8";
+@import "../../css/declaracoes";
+.container{
+    .buy-produto{
+        position: relative;
+        @include displayFlex(center, center, row);
+        width: 95%;
+        max-width: 910px;
+        border: 1px solid lightgray;
+        padding: 10px;
+        margin: auto;
+        margin-bottom: 20px;
+        &-img{
+            @include displayFlex(center, center, row);
+            .img-mini{
+                width: 80px;
+            }
+            &-mini{
+                cursor: pointer;
+                width: 60px;
+                border: 1px solid gray;
+                border-radius: 5px;
+                padding: 5px;
+            }
+            .img-show{
+                position: relative;
+                width: 300px;
+                height: 300px;
+                padding: 10px;
+                overflow: hidden;
+                img{
+                    position: absolute;
+                    object-fit: cover;
+                    height: 95%;
+                    width: 95%;
+                }
+            }
+        }
+        &-info{
+           align-self: flex-start;
+           margin-top: 12px;
+            .buy-produto-title{
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+            .buy-produto-desc{
+                    font-size: 14px;
+            }
+            div{
+                position: absolute;
+                bottom: 10px;
+                right: 20px;
+                #btn-addToCar, #btn-buy{ 
+                    cursor: pointer;
+                    height: 45px;
+                    width: 180px;
+                    margin-top: 30px;
+                    border-radius: 10px;
+                    transition: background-color 300ms;
+                }
+                #btn-addToCar{
+                    background-color: lighten($primaryColor, 10);
+                    border: 1px solid darken($primaryColor,5);
+                    color: white;
+                    font-size: 16px;
+                    &:hover{
+                        background-color: darken($primaryColor,5);
+                    }
+                }
+                #btn-buy{
+                    background-color: $buyButtonColor;
+                    border: 1px solid darken($buyButtonColor, 10);
+                    color: white;
+                    font-size: 16px;
+                    
+                    &:hover{
+                        background-color: darken($buyButtonColor, 10)
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width: 800px){
+    .container{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    .buy-produto{
+        height: 380px;
+        &-img{
+           align-self: flex-start;
+        }
+    }
+}
+@media screen and (max-width: 600px){
+    .buy-produto{
+        position: relative;
+        flex-direction: column !important;
+        height: auto;
+        &-info{
+            div{
+                position: relative !important;
+                right: 0 !important;
+                #btn-addToCar, #btn-buy{
+                    margin: 20px 50% 0 !important;
+                    transform: translate(-50%,0)
+                }
+            }
+        }
+        &-img{
+            flex-direction: column-reverse !important;
+            margin: auto;
+            .img-mini{
+                width: 90% !important;
+                overflow-x: scroll;
+                display: flex;
+                gap: 3px;
+                align-self: flex-start;
+                margin-top: 15px;
+            }
+        }
+    }
+}

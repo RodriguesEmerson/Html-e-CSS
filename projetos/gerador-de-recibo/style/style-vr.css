@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+:root{
+    --verdePadrao: rgb(0, 88, 66);
+    --verdehover: rgb(0, 63, 47);
+}
+.buttons{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 90%;
+    max-width: 923px;
+    height: 50px;
+}
+.btn-voltar, .btn-print{
+    height: 40px;
+    width: 100px;
+    background-color: var(--verdePadrao) ;
+    border: 1px solid green;
+    border-radius: 3px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.btn-print:hover, .btn-voltar:hover{
+    background-color: var(--verdehover);
+}
+.area-print{
+    max-width: 1000px;
+    margin: auto;
+    padding: 15px;
+}
+.p-title{
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.fist-via-content,.second-via-content{
+    margin: auto;
+    position: relative;
+    width: 95%;
+    border: 1px solid rgb(185, 185, 185);
+    padding: 10px 20px;
+    margin-bottom: 30px;
+}
+.second-via-content{
+    visibility: hidden;
+}
+.valvia{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 15px 0px;
+}
+.p-valor{
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid gray;
+    padding: 5px;
+}
+.p-via-first,.p-via-second{
+    font-weight: bold;
+}
+.text-recibo{
+    padding: 10px 0;
+}
+.cp{
+    list-style-position: inside;
+}
+.comopagou{
+    font-weight: bold;
+}
+.assinatura{
+    display: block;
+    width: 70%;
+    border-bottom: 1px solid gray;
+    margin: 50px auto 10px;
+}
+.city-data{
+    text-align: end;
+    padding: 15px 0;
+}
+.p-nome, .p-tel{
+    text-align: center;
+    padding: 3px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+}
+.logo-rodape{
+    display: none;
+}

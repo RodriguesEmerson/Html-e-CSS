@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style-vr.css">
+    <link rel="stylesheet" href="style/style-vr-print.css" media="print">
+    <title>Visualizar Recibo</title>
+</head>
+<body  onload="gerarRecibo()">
+    <header>
+        <h1>Gerador de Recibo</h1>
+    </header>
+    <main class="container">
+        <section class="buttons">
+            <button class="btn-voltar"><span>voltar</span></button>
+            <button class="btn-print" onclick="window.print()"><span>Imprimir</span></button>
+        </section>
+        <section class="area-print">
+            <div class="fist-via-content">
+
+                <h2 class="p-title">Recibo de Pagamento</h2>
+                <div class="valvia">
+                    <p class="p-via-first">1° via</p>
+                    <div class="p-valor">R$ 272,00</div>
+                </div>
+                
+                <p class="text-recibo"></p>
+                
+                <ul class="cp"><li><span>Forma de Pagamento: <span class="comopagou"></span></span></li></ul>
+                <span class="assinatura"></span>
+                <p class="p-nome">Emerson Rodrigues</p>
+                <p class="p-tel">3899176-6992</p>
+                <p class="city-data">Varzelândia, 12/01/2023</p>
+            </div>
+
+            <div class="second-via-content">
+                    <h2 class="p-title">Recibo de Pagamento</h2>
+                    <div class="valvia">
+                        <p class="p-via-second">2° via</p>
+                        <div class="p-valor p-valor-second">R$ 272,00</div>
+                    </div>
+        
+                    <p class="text-recibo text-recibo-second"></p>
+                    
+                    <ul class="cp"><li><span>Forma de Pagamento: <span class="comopagou comopagou-second"></span></span></li></ul>
+                    <span class="assinatura"></span>
+                    <p class="p-nome p-nome-second">Emerson Rodrigues</p>
+                    <p class="p-tel p-tel-second">3899176-6992</p>
+                    <p class="city-data p-city-data-second">Varzelândia, 12/01/2023</p>
+                </div>
+
+        </section>
+    </main>
+    <footer>
+        <p><b class="logo-rodape">Gerador de Recibo</b></p>
+        <p>Criado por <strong><a href="https://github.com/RodriguesEmerson">Emerson Rodrigues</a></strong> como projeto de aprendizado.</p>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+</html>

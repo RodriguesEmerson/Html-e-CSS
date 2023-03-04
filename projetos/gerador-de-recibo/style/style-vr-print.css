@@ -1,0 +1,13 @@
+@charset "UTF-8";
+header,.buttons{
+    display: none;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.logo-rodape{
+    display: block;
+}

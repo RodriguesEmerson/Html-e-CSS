@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+:root{
+    --cor0: white;
+    --cor1:rgb(209, 164, 97);
+    --cor15:rgb(255, 194, 144);
+    --cor2:#F29B30;
+    --cor3:#F27127;
+    --cor4:#F2441D;
+    --cor5:rgb(7, 29, 63);
+    --cor6:rgb(20, 76, 161);
+    --largura: 615px;
+}
+
+#container{
+    margin-top: 3px;
+    padding: 10px;
+    color: rgb(75, 75, 75);
+}
+#container h2{
+    background-color: var(--cor5);
+    padding: 10px;
+    text-align: center;
+    color: var(--cor0);
+    border-radius: 5px 
+}
+.description-receita{
+    width: 100%;
+    display: flex;
+    justify-content: baseline;
+    margin-bottom: 20px;
+    line-height: 1.5em;
+}
+
+.conteudo{
+    columns: 2;
+    margin: auto;
+    height: 110%;
+}
+.imagem{
+    margin: 0 1rem 0 0;
+    height: 308px;
+    width: 255px;
+
+    background: var(--cor5) url('imagens/destaque3.jpg') center center /cover;
+}
+.title{
+    background: var(--cor15);
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--cor3);
+    border-radius: 3px 3px 0 0;
+}
+.tipo{
+    margin-left: 30px;
+    color: var(--cor3);
+    font-weight: bold;
+}
+.info-adicional{
+    padding: 0px 3vw 10px;
+    background-color: rgba(255, 115, 0, 0.171);
+    border-radius: 5px;
+    line-height: 1.5em;
+}
+.info-adicional span{
+    background-color: var(--cor15);
+    display: block;
+    padding: 10px;
+    margin: 0 -3vw;
+    border-radius: 5px 5px 0 0 ;
+    color: var(--cor3);
+    text-align: center;
+    font-weight: bold;
+}
+@media screen and (max-width: 1150px){
+    #container{
+        width: 95%;
+    }
+    .conteudo{
+        columns: 1;
+
+    }
+    .description-receita{
+        width: 90%;
+        display: flex;
+        margin: auto;
+    }
+    
+    .info-adicional{
+        margin: 0 1vw;
+    }
+}
+@media screen and (max-width: 850px){
+    .description-receita{
+        display: block;
+    }
+    .imagem{
+        background-image: url('imagens/destaque3-big1.jpg');
+        width: 90%;
+        height: 38vw;
+        margin: 0 auto 1.3rem;
+    }
+}
+@media screen and (max-width: 500px){
+
+    .imagem{
+        background-image: url('imagens/destaque3-mobile.jpg');
+        width: 90%;
+        height: 60vw;
+        margin: 0 auto 1rem;
+    }
+}

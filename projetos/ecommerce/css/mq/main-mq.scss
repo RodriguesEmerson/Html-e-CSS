@@ -1,0 +1,155 @@
+@charset "UTF-8";
+@import "../declaracoes";
+
+@media screen and (max-width: 800px){
+   header{
+     position: fixed;
+     z-index: 9;
+     width: 100%;
+      
+      padding: 0 10px;
+      .logo img{
+         width: 120px;
+         display: none;
+      }
+      
+      .search{
+         position: relative;
+         margin-left: 50px;
+         #search{
+            margin: 0 10px 0 0;
+            width: 65vw;
+         }
+         #btn-search{
+            display: none;
+         }
+         .lupa{
+            position: absolute;
+            right: 20px;
+            color: $primaryColor;
+         }
+      }
+      .car-buy{
+         &-text{
+            display: none;
+         }
+      }
+      .menu-mobile-icon{
+         @include displayFlex(center, space-between, column);
+         position: absolute;
+         overflow: hidden;
+         cursor: pointer;
+         z-index: 10;
+         left: 10px;
+         width: 50px;
+         height: 40px;
+            &-bar{
+               height: 7px;
+               width: 90%;
+               border-radius: 5px;
+               background-color: white;
+               transition: 300ms;
+               transform-origin: right;
+            }
+         }
+      .menu{
+         position: fixed;
+         left: -100%;
+         top: 70px;
+         z-index: 9;
+         height: calc(100vh - 70px);
+         width: 80%;
+         transition: 500ms;
+
+         align-self: flex-start;
+         background-color: darken( white, 0);
+         box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.356);
+
+         ul{
+            @include displayFlex(center, space-between, column);
+            padding-top: 20px;
+            li{
+               width: 100%;
+              
+               
+               &:not(:last-child){
+                  margin-right: 0px;
+              }
+            }
+            a{
+              @include displayFlex(center, center, row);
+              color: $linksHeaderColor_mobile;
+              font-size: 18px;
+              height: 40px;
+              transition: 0;
+               &:hover{
+                  background-color: lighten($linksHeaderColor_mobile, 1);
+                  color: white;
+               }
+            }
+         }
+      }
+   }
+   .container{
+      padding-top: 75px;
+      .banner{
+         height: 40vw;
+      }
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 950px){
+   header{
+      .logo img{
+         width: 150px;
+      }
+      .search{
+         position: relative;
+         .lupa{
+            display: none;
+         }
+         #search{
+            margin: 0 10px 0 0;
+
+         }
+         #btn-search{
+            position: absolute;
+            right: 10px;
+            width: 50px !important;
+            border-radius: 0 44% 44% 0;
+            
+         }
+      }
+      .car-buy{
+         &-car{
+            margin-left: 20px;
+         }
+         &-text{
+            display: none;
+         }
+      }
+   }
+}
+
+@media screen and (min-width: 950px) and (max-width: 1100px){
+   header{
+      .logo img{
+         width: 150px;
+      }
+      .search{
+         #search{
+            margin: 0 10px 0 0;
+         }
+         #btn-search{
+            width: 70px !important;
+         }
+      }
+      .car-buy{
+         &-car{
+            margin-left: 20px;
+         }
+         &-text{
+            display: none;
+         }
+      }
+   }
+}

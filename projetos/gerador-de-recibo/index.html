@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Gerador de Recibo</title>
+</head>
+<body onload="geraData()">
+    <header>
+        <h1>Gerador de Recibo</h1>
+    </header>
+    <main class="container">
+        <section class="box">
+            <form action="" autocomplete="on" method="POST">
+                <fieldset class="dadospessoais">
+                    <div class="campos">
+                        <label for="valor">Valor:</label>
+                        <input type="text" name="valor" id="valor" required>
+                    </div>
+                    <div class="campos">
+                        <label for="nomepag">Nome do Pagador:</label>
+                        <input type="text" name="nomepag" id="nomepag" minlength="3" required>
+                    </div>
+                    <div class="campos">
+                        <label for="cpfpag">CPF ou CNPJ do pagador (opcional):</label>
+                        <input type="text" name="cpfpag" id="cpfpag">
+                    </div>
+                    <div class="campos">
+                        <label for="referencia">Referente à:</label>
+                        <input type="text" name="referencia" id="referencia" required>
+                    </div>
+                    <div class="campos">
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" name="cidade" id="cidade" required>
+                    </div>
+                    <div class="campos">
+                        <label for="data">Data:</label>
+                        <input type="text" name="data" id="data" required>
+                    </div>
+                    <div class="campos">
+                        <label for="nomeemiss">Nome do Emissor:</label>
+                        <input type="text" name="nomeemiss" id="nomeemiss" required>
+                    </div>
+                    <div class="campos">
+                        <label for="tel">Telefone (opcional):</label>
+                        <input type="tel" name="tel" id="tel" autocomplete="tel">
+                    </div>
+                    <div class="campos">
+                        <label for="cpfemiss">CPF do Emissor (opcional):</label>
+                        <input type="text" name="cpfemiss" id="cpfemiss">
+                    </div>
+                </fieldset>
+                <fieldset class="formapagamento">
+                    <div class="formapagcampo">
+                        <input type="radio" name="formpag" id="pagdinheiro" checked>
+                        <label for="pagdinheiro">Dinheiro </label>
+                    </div>
+    
+                    <div class="formapagcampo">
+                        <input type="radio" name="formpag" id="pagpix">
+                        <label for="pagpix">Pix</label>
+                    </div>
+    
+                    <div class="formapagcampo">
+                        <input type="radio" name="formpag" id="pagtd">
+                        <label for="pagtd">Transferência/Depósio</label>
+                    </div>
+    
+                    <div class="formapagcampo">
+                        <input type="radio" name="formpag" id="pagcartao">
+                        <label for="pagcartao">Cartão de Crédito/Débito</label>
+                    </div>
+                </fieldset>
+    
+                <div class="vias">
+                    <span>Duas vias?</span>
+                    <div>
+                        <input type="checkbox" name="checkvias" id="checkvias">
+                        <label for="checkvias">Sim</label>
+                    </div>
+                </div>
+                <button type="submit" class="butsub" id="submit">
+                    <span>Gerar Recibo</span>
+                </button>
+            </form>
+        </section>
+    </main>  
+    <footer>
+        <p>Criado por <strong><a href="https://github.com/RodriguesEmerson">Emerson Rodrigues</a></strong> como projeto de aprendizado</p>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+</html>

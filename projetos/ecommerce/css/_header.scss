@@ -1,0 +1,149 @@
+body{
+    overflow-x: hidden;
+}
+header{
+    position: relative;
+    @include displayFlex(center, space-around,row);
+    display: flex;
+    height: 70px;
+    padding: 0 30px;
+    margin-bottom: 15px;
+    background-color: $primaryColor;
+    .logo img{
+        width: 200px;
+    }
+    .search{
+        color: white;
+        @include displayFlex(center, space-between, row);
+        #search{
+            outline: none;
+            margin: 0 10px;
+            width: 35vw;
+            max-width: 500px;
+            height: 40px;
+            border-radius: 25px;
+            border: 1px solid gray;
+            text-indent: 10px;
+            &:focus-within{
+                border: 2px solid darken($primaryColor, 10);
+            }
+        }
+        #btn-search{
+            position: relative;
+            cursor: pointer;
+            height: 40px;
+            width: 90px;
+            border-radius: 10px;
+            border: 1px solid lighten($primaryColor, 10);
+            transition: 300ms;
+            &:hover{
+                background-color: lighten($linksHeaderColor_hover, 50);
+            }
+        }
+    }
+    .menu ul{
+        @include displayFlex(center, center, row);
+        list-style-type: none;
+        li{
+            &:not(:last-child){
+                margin-right: 15px;
+                
+            }
+        }
+        a{
+            text-decoration: none;
+            color: $linksHeaderColor;
+            transition:  100ms;
+            &:hover{
+                color: $linksHeaderColor_hover;
+            }
+        }
+    }
+    .car-buy{
+        color: white;
+        @include displayFlex(center, space-between, row);
+        cursor: pointer;
+     .material-symbols-outlined {
+        
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+      }
+    }
+}
+header .popup-carrinho{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 100px;
+    position: absolute;
+    height: calc(100vh - 70px);
+    width: 300px;
+    top: 70px;
+    right: -310px;
+    z-index: 10;
+    transition: 500ms;
+    hr{
+        width: 70%;
+        opacity: 0.4;
+        margin: auto;
+    }
+    background-color: white;
+    box-shadow: -3px 5px 10px rgba(0, 0, 0, 0.445);
+
+    .prod-car{
+        @include displayFlex(center,  space-between, row);
+        padding: 0 25px 0 10px;
+        height: 100px;
+        justify-self: center;
+        align-self: center;
+        text-decoration: none;
+        transition: 300ms;
+       
+        .img-car{
+            height: 80px;
+        }
+        div{
+            position: relative;
+            height: 70px;
+            @include displayFlex(flex-end, space-between, column);
+            
+        }
+        .title-car{
+            color: rgb(36, 36, 36);
+            font-weight: bold;
+        }
+        .valor-car{
+            color: green;
+            font-weight: bold;
+        }
+        &:hover{
+            background-color: rgb(221, 221, 221);
+        }
+        
+    }
+
+    .ver-mais{
+        @include displayFlex(center, center, row);
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        transform: translate(-50%,0);
+        height: 50px;
+        width: 90%;
+        color: $linksHeaderColor;
+        text-decoration: none;
+        background-color: $primaryColor;
+        transition:  500ms;
+        &:hover{
+            background-color: darken($primaryColor, 10)
+        }
+    }
+    .itsOnCar{
+        
+    }
+    .open{
+        
+    }
+}

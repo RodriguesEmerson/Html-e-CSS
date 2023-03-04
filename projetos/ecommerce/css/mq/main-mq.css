@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    padding: 0 10px;
+  }
+  header .logo img {
+    width: 120px;
+    display: none;
+  }
+  header .search {
+    position: relative;
+    margin-left: 50px;
+  }
+  header .search #search {
+    margin: 0 10px 0 0;
+    width: 65vw;
+  }
+  header .search #btn-search {
+    display: none;
+  }
+  header .search .lupa {
+    position: absolute;
+    right: 20px;
+    color: #ff7300;
+  }
+  header .car-buy-text {
+    display: none;
+  }
+  header .menu-mobile-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 10;
+    left: 10px;
+    width: 50px;
+    height: 40px;
+  }
+  header .menu-mobile-icon-bar {
+    height: 7px;
+    width: 90%;
+    border-radius: 5px;
+    background-color: white;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    -webkit-transform-origin: right;
+            transform-origin: right;
+  }
+  header .menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    z-index: 9;
+    height: calc(100vh - 70px);
+    width: 80%;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    background-color: white;
+    -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.356);
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.356);
+  }
+  header .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 20px;
+  }
+  header .menu ul li {
+    width: 100%;
+  }
+  header .menu ul li:not(:last-child) {
+    margin-right: 0px;
+  }
+  header .menu ul a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    color: #ff7300;
+    font-size: 18px;
+    height: 40px;
+    -webkit-transition: 0;
+    transition: 0;
+  }
+  header .menu ul a:hover {
+    background-color: #ff7605;
+    color: white;
+  }
+  .container {
+    padding-top: 75px;
+  }
+  .container .banner {
+    height: 40vw;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 950px) {
+  header .logo img {
+    width: 150px;
+  }
+  header .search {
+    position: relative;
+  }
+  header .search .lupa {
+    display: none;
+  }
+  header .search #search {
+    margin: 0 10px 0 0;
+  }
+  header .search #btn-search {
+    position: absolute;
+    right: 10px;
+    width: 50px !important;
+    border-radius: 0 44% 44% 0;
+  }
+  header .car-buy-car {
+    margin-left: 20px;
+  }
+  header .car-buy-text {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 950px) and (max-width: 1100px) {
+  header .logo img {
+    width: 150px;
+  }
+  header .search #search {
+    margin: 0 10px 0 0;
+  }
+  header .search #btn-search {
+    width: 70px !important;
+  }
+  header .car-buy-car {
+    margin-left: 20px;
+  }
+  header .car-buy-text {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main-mq.css.map */
