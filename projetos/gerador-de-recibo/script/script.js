@@ -72,7 +72,7 @@ btn_submit.addEventListener('click', function(e){
 
 
     //ABRIR VISUALIZAÇÃO DE RECIBO EM NOVA GUIA
-    let url = 'https://rodriguesemerson.github.io/gerador-de-recibo/visualizar-recibo'
+    let url = 'https://rodriguesemerson.github.io/Html-e-CSS/projetos/gerador-de-recibo/visualizar-recibo'
 
     window.open(url,'_blank')
     window.focus();
