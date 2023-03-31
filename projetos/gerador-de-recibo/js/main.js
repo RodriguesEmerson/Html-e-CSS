@@ -66,8 +66,8 @@ function gerarRecibo(e){
     localStorage.setItem('dados', dados)
 
     //Abre a página do recibo em outra janela
-    // let url = 'https://rodriguesemerson.github.io/Html-e-CSS/projetos/gerador-de-recibo/visualizar-recibo'
-    let url = 'http://127.0.0.1:5501/projetos/gerador-de-recibo/visualizar-recibo.html'
+    let url = 'https://rodriguesemerson.github.io/Html-e-CSS/projetos/gerador-de-recibo/visualizar-recibo'
+    // let url = 'http://127.0.0.1:5501/projetos/gerador-de-recibo/visualizar-recibo.html'
     window.open(url,'_blank')
     window.focus();
 };
