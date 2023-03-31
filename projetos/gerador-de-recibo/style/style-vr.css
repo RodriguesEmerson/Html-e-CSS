@@ -13,7 +13,7 @@
     max-width: 923px;
     height: 50px;
 }
-.btn-voltar, .btn-print{
+.btn-print{
     height: 40px;
     width: 100px;
     background-color: var(--verdePadrao) ;
@@ -23,8 +23,11 @@
     font-size: 1.2em;
     cursor: pointer;
 }
-.btn-print:hover, .btn-voltar:hover{
+.btn-print:hover{
     background-color: var(--verdehover);
+}
+.btn-voltar{
+    visibility: hidden;
 }
 .area-print{
     max-width: 1000px;

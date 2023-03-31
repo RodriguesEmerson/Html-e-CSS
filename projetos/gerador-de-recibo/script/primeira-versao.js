@@ -1,13 +1,3 @@
-//---------------------------------------------------//
-// Estou fazendo esse projeto, sabento que preciso   //
-// de mais conhecimento de JavaScript, mas estudei   //
-// JS apenas 15 dias. Parei para estudar HTML5 e     //
-// CSS3.                                             //
-// Esse código provavelmente                         //
-// vai me doer os olhas daqui uns 10 meses!          //
-// Tabém dexei algumas funcinalidades faltando.      //
-//---------------------------------------------------//
-
 let valor = document.getElementById('valor')
 let nomepag = document.getElementById('nomepag')
 let cpfpag = document.getElementById('cpfpag')
