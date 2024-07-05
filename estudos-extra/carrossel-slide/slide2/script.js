@@ -15,8 +15,6 @@ function carregaImagens(){
 prev.addEventListener('click', function(){
 
     
-    
-    
     let posi = troca_imagem.offsetLeft
     if(posi === 0){
         
